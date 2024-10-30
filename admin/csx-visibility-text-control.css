@@ -1,0 +1,36 @@
+div.label {
+    position: relative;
+}
+
+div.label span.visibility {
+    width: 16px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+div.label span.visibility::after {
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    line-height: 24px;
+    content: "\f06e";
+}
+
+div.label span.visibility:hover::after {
+    color: #0073aa;
+    content: "\f070";
+}
+
+div.label span.visibility.disabled::after {
+    opacity: 0.5;
+    content: "\f070";
+}
+
+div.label span.visibility.disabled:hover::after {
+    color: #0073aa;
+    content: "\f06e";
+}

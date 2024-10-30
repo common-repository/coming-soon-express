@@ -1,0 +1,255 @@
+/* Default Styles for Coming Soon Express page */
+
+body {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat' !important;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+b,
+strong {
+    font-family: 'Montserrat' !important;
+    font-weight: 700;
+}
+a {
+    display: inline-block;
+}
+
+.button,
+button,
+input[type="button"],
+input[type="submit"] {
+    cursor: pointer;
+}
+
+#coming-soon-express-page {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    align-items: safe center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#coming-soon-express-page > #background-overlay {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+#coming-soon-express-page > #coming-soon-express-page-container {
+	max-width: 900px;
+	margin: auto;
+    z-index: 1;
+}
+
+.widget_custom_html .textwidget {
+	max-width: 560px;
+}
+
+#bigtitle,
+.bigtitle {
+	font-size: 100px;
+    line-height: 1;
+}
+
+#headline,
+.headline {
+	font-size: 30px;
+	line-height: normal;
+}
+
+#description,
+#description p,
+.description,
+.description p {
+	font-size: 19px;
+}
+
+.button,
+button,
+input[type="button"],
+input[type="submit"] {
+	font-size: 26px;
+	font-weight: 400;
+	padding: 25px 40px;
+	border: none;
+	outline: none !important;
+	border-radius: 0;
+	text-decoration: none;
+}
+
+.button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+	outline: none !important;
+}
+
+input[type="text"],
+input[type="email"] {
+	padding: 22px 40px;
+	border-radius: 0;
+	border: none;
+	outline: none !important;
+	font-size: 26px;
+	font-weight: 400;
+	color: #000;
+	line-height: 1;
+}
+
+::placeholder {
+	font-size: 26px;
+	font-weight: 400;
+    color: #bababa;
+}
+
+#coming-soon-express-page .button,
+#coming-soon-express-page button,
+#coming-soon-express-page input[type="button"],
+#coming-soon-express-page input[type="submit"] {
+    background-color: #816394;
+}
+
+#coming-soon-express-page .button:hover,
+#coming-soon-express-page button:hover,
+#coming-soon-express-page input[type="button"]:hover,
+#coming-soon-express-page input[type="submit"]:hover {
+    background-color: #ae85c7;
+}
+
+#coming-soon-express-page .button,
+#coming-soon-express-page button,
+#coming-soon-express-page input[type="button"],
+#coming-soon-express-page input[type="submit"] {
+    color: #ffffff;
+}
+
+#coming-soon-express-page .button:hover,
+#coming-soon-express-page button:hover,
+#coming-soon-express-page input[type="button"]:hover,
+#coming-soon-express-page input[type="submit"]:hover {
+    color: #ffffff;
+}
+
+/* WIDGET CONTAINER
+-------------------------------------------------------------- */
+#coming-soon-express-page .coming-soon-express-widget-container {
+    margin-top: 30px;
+}
+
+/* NINJA FORMS
+-------------------------------------------------------------- */
+.widget_ninja_forms_widget .nf-form-title,
+.widget_ninja_forms_widget .nf-form-fields-required {
+	display: none;
+}
+
+.widget_ninja_forms_widget nf-fields-wrap {
+	display: flex;
+}
+
+.widget_ninja_forms_widget nf-fields-wrap > nf-field {
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.widget_ninja_forms_widget nf-fields-wrap > nf-field {
+	width: 100%;
+	padding-right: 20px;
+}
+
+.widget_ninja_forms_widget nf-fields-wrap > nf-field:last-child {
+	padding-right: 0;
+	flex: 1;
+	display: flex;
+	align-items: flex-start;
+}
+
+.widget_ninja_forms_widget .nf-field-container,
+.widget_ninja_forms_widget .submit-container .submit-wrap input[type="button"] {
+	margin-bottom: 0;
+}
+
+/* LIGHT SOCIAL ICONS
+-------------------------------------------------------------- */
+.widget_lsi_widget .lsi-social-icons > li > a {
+	background-color: transparent !important;
+}
+
+/* MEDIA QUERIES
+-------------------------------------------------------------- */
+
+@media screen and ( max-width: 1024px ){
+
+	#coming-soon-express-page-container {
+		padding: 0 30px;
+	}
+
+    #bigtitle {
+		font-size: 60px;
+	}
+
+	#headline {
+		font-size: 24px;
+	}
+
+	p#description {
+		font-size: 17px;
+	}
+
+	.button,
+	button,
+	input[type="button"],
+	input[type="submit"],
+	input[type="text"],
+	input[type="email"],
+	::placeholder {
+		font-size: 18px;
+	}
+
+	.button,
+	button,
+	input[type="button"],
+	input[type="submit"] {
+		padding: 20px;
+	}
+
+	input[type="text"],
+	input[type="email"] {
+		padding: 18px 20px;
+	}
+
+}
+
+@media screen and ( max-width: 600px ){
+
+	.widget_ninja_forms_widget nf-fields-wrap {
+		display: block;
+	}
+
+	.widget_ninja_forms_widget .submit-container .submit-wrap input[type="button"] {
+		width: 100%;
+	}
+
+}
